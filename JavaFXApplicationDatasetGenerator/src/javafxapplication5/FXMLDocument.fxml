@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TitledPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Association Mining" textAlignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.FXMLDocumentController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="label_output" layoutX="238.0" layoutY="196.0" />
+            <RadioButton fx:id="auto_rb" layoutX="194.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleRadio" text="Default Values" />
+            <RadioButton fx:id="manual_rb" layoutX="378.0" layoutY="40.0" mnemonicParsing="false" onAction="#handlemanual" text="Manual Mode" />
+            <Group layoutX="158.0" layoutY="238.0" />
+            <TextField fx:id="t1" layoutX="130.0" layoutY="70.0" prefHeight="29.0" prefWidth="49.0" />
+            <Label fx:id="l1" layoutX="25.0" layoutY="76.0" text="Number of Items" />
+            <Label fx:id="l2" layoutX="229.0" layoutY="76.0" text="Zipf Factor" />
+            <Label fx:id="l3" layoutX="367.0" layoutY="76.0" text="Number of Transactions" />
+            <TextField fx:id="t2" layoutX="299.0" layoutY="70.0" prefHeight="29.0" prefWidth="49.0" />
+            <TextField fx:id="t3" layoutX="513.0" layoutY="70.0" prefHeight="29.0" prefWidth="49.0" />
+            <Button fx:id="submit_button" layoutX="28.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="29.0" prefWidth="534.0" text="Submit" />
+            <Label layoutX="45.0" layoutY="40.0" text="Choose an Options" />
+         </children></AnchorPane>
+  </content>
+   <font>
+      <Font name="Bell MT" size="17.0" />
+   </font>
+</TitledPane>
